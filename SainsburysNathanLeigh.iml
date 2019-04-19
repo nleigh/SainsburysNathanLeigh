@@ -32,5 +32,7 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="htmlunit-2.35.0-OSGi" level="project" />
+    <orderEntry type="library" name="json" level="project" />
+    <orderEntry type="library" name="gson" level="project" />
   </component>
 </module>
