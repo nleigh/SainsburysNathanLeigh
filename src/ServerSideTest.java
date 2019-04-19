@@ -34,4 +34,13 @@ class ServerSideTest {
         List<DomElement> products = serverSide.GetAllProducts(page);
         assertEquals(17, products.size());
     }
+
+    @Test
+    void GetProductNameForFirstProduct(){
+        ServerSide serverSide = new ServerSide();
+        HtmlPage page = serverSide.GetUrlResponse(URL);
+        List<DomElement> products = serverSide.GetAllProducts(page);
+        String productName = serverSide.GetProductName(products.get(0));
+        assertEquals("Sainsbury's Strawberries 400g", productName);
+    }
 }

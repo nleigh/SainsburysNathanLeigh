@@ -22,4 +22,11 @@ public class ServerSide{
         List<DomElement> productList = page.getByXPath(productListXPathQuery);
         return productList;
     }
+
+    public String GetProductName(DomElement product) {
+        HtmlElement h3 = product.getElementsByTagName("h3").get(0);
+        DomNode url = h3.getFirstChild().getNextSibling();
+        String urlAsText = url.asText();
+        return urlAsText;
+    }
 }
