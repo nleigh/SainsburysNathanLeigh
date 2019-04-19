@@ -1,6 +1,7 @@
 import com.gargoylesoftware.htmlunit.WebClient;
 import com.gargoylesoftware.htmlunit.html.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class ServerSide{
@@ -17,15 +18,28 @@ public class ServerSide{
 
     }
 
-    public List<DomElement> GetAllProducts(HtmlPage page) {
+    public List<Product>GetAllProducts(HtmlPage page) {
         String productListXPathQuery = "//div[contains(@class, 'productNameAndPromotions')]";
-        List<DomElement> productList = page.getByXPath(productListXPathQuery);
-        return productList;
+        List<DomElement> productListDomElements = page.getByXPath(productListXPathQuery);
+        List<Product> products = new ArrayList<Product>();
+
+        for (DomElement productDomElement : productListDomElements){
+            Product product = new Product(GetProductName(productDomElement), GetProductUrl(productDomElement));
+            products.add(product);
+        }
+
+        return products;
     }
 
     public String GetProductName(DomElement product) {
         HtmlElement aHref = product.getElementsByTagName("a").get(0);
         String urlAsText = aHref.asText();
         return urlAsText;
+    }
+
+    public String GetProductUrl(DomElement product) {
+        HtmlElement aHref = product.getElementsByTagName("a").get(0);
+        String productUrl = aHref.getBaseURI();
+        return productUrl;
     }
 }

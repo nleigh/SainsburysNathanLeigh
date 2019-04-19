@@ -31,16 +31,21 @@ class ServerSideTest {
     void GetAllProductsCountIsEqualToActualProductPageCount(){
         ServerSide serverSide = new ServerSide();
         HtmlPage page = serverSide.GetUrlResponse(URL);
-        List<DomElement> products = serverSide.GetAllProducts(page);
+        List<Product> products = serverSide.GetAllProducts(page);
         assertEquals(17, products.size());
     }
 
     @Test
-    void GetProductNameForFirstProduct(){
+    void GetProductNameAndURIForFirstProduct(){
         ServerSide serverSide = new ServerSide();
         HtmlPage page = serverSide.GetUrlResponse(URL);
-        List<DomElement> products = serverSide.GetAllProducts(page);
-        String productName = serverSide.GetProductName(products.get(0));
+        List<Product> products = serverSide.GetAllProducts(page);
+        Product firstProduct = products.get(0);
+        String productName = firstProduct.getProductName();
+        String productUrl = firstProduct.getProductUrl();
+
         assertEquals("Sainsbury's Strawberries 400g", productName);
+        assertEquals("https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html", productUrl);
+
     }
 }
