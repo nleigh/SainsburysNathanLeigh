@@ -5,10 +5,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class sainburysProductsScraperTest {
+class SainburysProductsScraperTest {
 
-    private String URL = "https://jsainsburyplc.github.io/sainburysProductsScraper-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
-
+    private String URL = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
     @Test
     void GetUrlResponseReturns200WhenUrlIsValid() {
         SainburysProductsScraper sainburysProductsScraper = new SainburysProductsScraper();
@@ -44,7 +43,7 @@ class sainburysProductsScraperTest {
         String productUrl = firstProduct.getProductUrl();
 
         assertEquals("Sainsbury's Strawberries 400g", productName);
-        assertEquals("https://jsainsburyplc.github.io/sainburysProductsScraper-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html", productUrl);
+        assertEquals("https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html", productUrl);
 
     }
 }
