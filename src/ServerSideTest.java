@@ -4,11 +4,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class ServerSideTest {
 
+    private String URL = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
+
     @Test
     void GetUrlResponseReturns200WhenUrlIsValid() {
-        String url = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
         ServerSide serverSide = new ServerSide();
-        HtmlPage page = serverSide.GetUrlResponse(url);
+        HtmlPage page = serverSide.GetUrlResponse(URL);
 
         int statusCode = page.getWebResponse().getStatusCode();
 
@@ -17,9 +18,17 @@ class ServerSideTest {
 
     @Test
     void GetUrlResponseReturnsNullWhenUrlIsInvalid() {
-        String url = "bad url";
         ServerSide serverSide = new ServerSide();
-        HtmlPage page = serverSide.GetUrlResponse(url);
+        HtmlPage page = serverSide.GetUrlResponse("bad url");
         assertNull(page);
+    }
+
+    @Test
+    void GetFirstProductFromPage(){
+        ServerSide serverSide = new ServerSide();
+        HtmlPage page = serverSide.GetUrlResponse(URL);
+        String firstProduct = serverSide.GetFirstProduct(page);
+        String expectedFirstProduct = "Sainsbury's Strawberries 400g";
+        assertEquals(expectedFirstProduct, firstProduct);
     }
 }

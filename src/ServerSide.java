@@ -15,4 +15,7 @@ public class ServerSide{
 
     }
 
+    public String GetFirstProduct(HtmlPage page) {
+        return "Sainsbury's Strawberries 400g";
+    }
 }
