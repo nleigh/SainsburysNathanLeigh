@@ -1,5 +1,7 @@
 import com.gargoylesoftware.htmlunit.WebClient;
-import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.html.*;
+
+import java.util.List;
 
 public class ServerSide{
 
@@ -15,7 +17,9 @@ public class ServerSide{
 
     }
 
-    public String GetFirstProduct(HtmlPage page) {
-        return "Sainsbury's Strawberries 400g";
+    public List<DomElement> GetAllProducts(HtmlPage page) {
+        String productListXPathQuery = "//div[contains(@class, 'productNameAndPromotions')]";
+        List<DomElement> productList = page.getByXPath(productListXPathQuery);
+        return productList;
     }
 }

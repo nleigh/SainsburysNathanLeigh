@@ -1,5 +1,9 @@
+import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ServerSideTest {
@@ -24,11 +28,10 @@ class ServerSideTest {
     }
 
     @Test
-    void GetFirstProductFromPage(){
+    void GetAllProductsCountIsEqualToActualProductPageCount(){
         ServerSide serverSide = new ServerSide();
         HtmlPage page = serverSide.GetUrlResponse(URL);
-        String firstProduct = serverSide.GetFirstProduct(page);
-        String expectedFirstProduct = "Sainsbury's Strawberries 400g";
-        assertEquals(expectedFirstProduct, firstProduct);
+        List<DomElement> products = serverSide.GetAllProducts(page);
+        assertEquals(17, products.size());
     }
 }
