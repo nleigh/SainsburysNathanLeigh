@@ -24,9 +24,8 @@ public class ServerSide{
     }
 
     public String GetProductName(DomElement product) {
-        HtmlElement h3 = product.getElementsByTagName("h3").get(0);
-        DomNode url = h3.getFirstChild().getNextSibling();
-        String urlAsText = url.asText();
+        HtmlElement aHref = product.getElementsByTagName("a").get(0);
+        String urlAsText = aHref.asText();
         return urlAsText;
     }
 }
