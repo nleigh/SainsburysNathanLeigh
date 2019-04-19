@@ -4,7 +4,7 @@ import com.gargoylesoftware.htmlunit.html.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ServerSide{
+public class SainburysProductsScraper {
 
     public HtmlPage GetUrlResponse(String websiteUrl){
         WebClient client = new WebClient();

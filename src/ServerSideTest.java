@@ -1,4 +1,3 @@
-import com.gargoylesoftware.htmlunit.html.DomElement;
 import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import org.junit.jupiter.api.Test;
 
@@ -6,14 +5,14 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ServerSideTest {
+class sainburysProductsScraperTest {
 
-    private String URL = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
+    private String URL = "https://jsainsburyplc.github.io/sainburysProductsScraper-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
 
     @Test
     void GetUrlResponseReturns200WhenUrlIsValid() {
-        ServerSide serverSide = new ServerSide();
-        HtmlPage page = serverSide.GetUrlResponse(URL);
+        SainburysProductsScraper sainburysProductsScraper = new SainburysProductsScraper();
+        HtmlPage page = sainburysProductsScraper.GetUrlResponse(URL);
 
         int statusCode = page.getWebResponse().getStatusCode();
 
@@ -22,30 +21,30 @@ class ServerSideTest {
 
     @Test
     void GetUrlResponseReturnsNullWhenUrlIsInvalid() {
-        ServerSide serverSide = new ServerSide();
-        HtmlPage page = serverSide.GetUrlResponse("bad url");
+        SainburysProductsScraper sainburysProductsScraper = new SainburysProductsScraper();
+        HtmlPage page = sainburysProductsScraper.GetUrlResponse("bad url");
         assertNull(page);
     }
 
     @Test
     void GetAllProductsCountIsEqualToActualProductPageCount(){
-        ServerSide serverSide = new ServerSide();
-        HtmlPage page = serverSide.GetUrlResponse(URL);
-        List<Product> products = serverSide.GetAllProducts(page);
+        SainburysProductsScraper sainburysProductsScraper = new SainburysProductsScraper();
+        HtmlPage page = sainburysProductsScraper.GetUrlResponse(URL);
+        List<Product> products = sainburysProductsScraper.GetAllProducts(page);
         assertEquals(17, products.size());
     }
 
     @Test
     void GetProductNameAndURIForFirstProduct(){
-        ServerSide serverSide = new ServerSide();
-        HtmlPage page = serverSide.GetUrlResponse(URL);
-        List<Product> products = serverSide.GetAllProducts(page);
+        SainburysProductsScraper sainburysProductsScraper = new SainburysProductsScraper();
+        HtmlPage page = sainburysProductsScraper.GetUrlResponse(URL);
+        List<Product> products = sainburysProductsScraper.GetAllProducts(page);
         Product firstProduct = products.get(0);
         String productName = firstProduct.getProductName();
         String productUrl = firstProduct.getProductUrl();
 
         assertEquals("Sainsbury's Strawberries 400g", productName);
-        assertEquals("https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html", productUrl);
+        assertEquals("https://jsainsburyplc.github.io/sainburysProductsScraper-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html", productUrl);
 
     }
 }
