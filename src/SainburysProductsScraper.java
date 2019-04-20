@@ -53,9 +53,10 @@ public class SainburysProductsScraper {
     }
 
     public String GetProductUrl(DomElement product) {
-        HtmlElement aHref = product.getElementsByTagName("a").get(0);
-        String productUrl = aHref.getBaseURI();
-        return productUrl;
+        HtmlAnchor aHref = (HtmlAnchor) product.getElementsByTagName("a").get(0);
+        String productUrl = aHref.getHrefAttribute();
+        String formattedProductUrl = productUrl.replace("../../../../../../","https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/");
+        return formattedProductUrl;
     }
 
     private int getProductKCalPer100gFromProductPage(HtmlPage productPage) {
@@ -98,15 +99,21 @@ public class SainburysProductsScraper {
 
 
     private String getProductDescriptionFromProductPage(HtmlPage productPage) {
-        String productTextXPathQuery = "//div[contains(@class, 'productText')]";
-        List<DomElement> productListDomElements = productPage.getByXPath(productTextXPathQuery);
-        DomElement firstClassProductDescription = productListDomElements.get(0);
+        try{
+            String productTextXPathQuery = "//div[contains(@class, 'productText')]";
+            List<DomElement> productListDomElements = productPage.getByXPath(productTextXPathQuery);
+            DomElement firstClassProductDescription = productListDomElements.get(0);
 
-        DomNodeList<HtmlElement> pTagProductDescription = firstClassProductDescription.getElementsByTagName("p");
-        HtmlElement firstPTagProductDescription = pTagProductDescription.get(0);
-        String descriptionString = firstPTagProductDescription.getFirstChild().asText();
+            DomNodeList<HtmlElement> pTagProductDescription = firstClassProductDescription.getElementsByTagName("p");
+            HtmlElement firstPTagProductDescription = pTagProductDescription.get(0);
+            String descriptionString = firstPTagProductDescription.getFirstChild().asText();
 
-        return formatDescriptionString(descriptionString);
+            return formatDescriptionString(descriptionString);
+        }
+        catch(Exception e){
+            return "";
+        }
+
     }
 
     public String formatDescriptionString(String descriptionString) {

@@ -52,7 +52,29 @@ public class ProductTest {
 
         assertEquals(2.40, gross);
         assertEquals(0.48, vat);
+    }
 
+    @Test
+    void generateTotalJsonForMultpleProducts() {
+        Product product1 = new Product("test1", "www", 123, 1.75, "test description");
+        Product product2 = new Product("test2", "www", 123, 1.75, "test description");
+        Product product3 = new Product("test3", "www", 123, 1.5, "test description");
+
+        List<Product> products = new ArrayList<Product>();
+        products.add(product1);
+        products.add(product2);
+        products.add(product3);
+
+        String result = Product.generateResultsJson(products);
+
+        JSONObject obj = new JSONObject(result);
+        JSONObject total = obj.getJSONObject("total");
+
+        double gross = total.getDouble("gross");
+        double vat = total.getDouble("vat");
+
+        assertEquals(5, gross);
+        assertEquals(1, vat);
     }
 
 }
