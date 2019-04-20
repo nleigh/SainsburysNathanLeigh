@@ -84,4 +84,11 @@ class SainburysProductsScraperTest {
         double result = scraper.GetUnitPriceFromString(unitPrice);
         assertEquals(1.23, result);
     }
+
+    @Test
+    void ConvertKCalStringToDoubleWhenStringContainsKcal(){
+        SainburysProductsScraper scraper = new SainburysProductsScraper();
+        int result = scraper.ConvertAndFormatKCalStringToInt("123kcal");
+        assertEquals(123, result);
+    }
 }

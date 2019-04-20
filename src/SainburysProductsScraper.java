@@ -60,8 +60,24 @@ public class SainburysProductsScraper {
 
     private int getProductKCalPer100gFromProductPage(HtmlPage productPage) {
         // Omit the kcal_per_100g field, if calories are unavailable.
+        try {
+            String nutritionLevelXPathQuery = "//td[contains(@class, 'nutritionLevel1')]";
+            List<DomElement> nutritionLevelListDomElements = productPage.getByXPath(nutritionLevelXPathQuery);
+            DomElement nutritionLevelElement = nutritionLevelListDomElements.get(0);
+            DomNode kCalNode = nutritionLevelElement.getFirstChild();
+            String kCalString = kCalNode.toString();
+            int kCal = ConvertAndFormatKCalStringToInt(kCalString);
+            return kCal;
+        }
+        catch(Exception e)
+        {
+            return 0;
+        }
+    }
 
-        return 33;
+    public int ConvertAndFormatKCalStringToInt(String kCalString) {
+        kCalString = kCalString.replace("kcal", "");
+        return Integer.parseInt(kCalString);
     }
 
     private double getProductUnitPriceFromProductPage(HtmlPage productPage) {
