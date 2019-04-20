@@ -34,11 +34,13 @@ java -jar out/artifacts/SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar http
       },
       {
          "title":"Sainsbury's Blueberries 200g",
+         "kcal_per_100g":45,
          "unit_price":1.75,
          "description":"by Sainsbury's blueberries"
       },
       {
          "title":"Sainsbury's Raspberries 225g",
+         "kcal_per_100g":32,
          "unit_price":1.75,
          "description":"by Sainsbury's raspberries"
       },
@@ -56,27 +58,31 @@ java -jar out/artifacts/SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar http
       },
       {
          "title":"Sainsbury's Blueberries, SO Organic 150g",
+         "kcal_per_100g":45,
          "unit_price":2.0,
          "description":"So Organic blueberries"
       },
       {
          "title":"Sainsbury's Raspberries, Taste the Difference 150g",
+         "kcal_per_100g":32,
          "unit_price":2.5,
          "description":"Ttd raspberries"
       },
       {
          "title":"Sainsbury's Cherries 400g",
+         "kcal_per_100g":52,
          "unit_price":2.5,
          "description":"by Sainsbury's Family Cherry Punnet"
       },
       {
          "title":"Sainsbury's Blackberries, Tangy 150g",
+         "kcal_per_100g":32,
          "unit_price":1.5,
          "description":"by Sainsbury's blackberries"
       },
       {
          "title":"Sainsbury's Strawberries, Taste the Difference 300g",
-         "kcal_per_100g":27,
+         "kcal_per_100g":33,
          "unit_price":2.5,
          "description":"Ttd strawberries"
       },
@@ -97,11 +103,13 @@ java -jar out/artifacts/SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar http
       },
       {
          "title":"Sainsbury's Redcurrants 150g",
+         "kcal_per_100g":71,
          "unit_price":2.5,
          "description":"by Sainsbury's redcurrants"
       },
       {
          "title":"Sainsbury's Cherry Punnet, Taste the Difference 200g",
+         "kcal_per_100g":48,
          "unit_price":2.5,
          "description":"Cherry Punnet"
       },

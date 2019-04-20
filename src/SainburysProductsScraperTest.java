@@ -78,6 +78,18 @@ class SainburysProductsScraperTest {
         assertEquals(expectedProduct.getProductKcalPer100g(), product.getProductKcalPer100g());
         assertEquals(expectedProduct.getProductUnitPrice(), product.getProductUnitPrice());
         assertEquals(expectedProduct.getProductDescription(), product.getProductDescription());
+
+        // 2nd product test
+        productUrl = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/shop/gb/groceries/berries-cherries-currants/sainsburys-blueberries-200g.html";
+        scraper = new SainburysProductsScraper();
+        product = new Product("Sainsbury's Blueberries 200g", productUrl);
+        product = scraper.GetProductInformation(product);
+
+        expectedProduct = new Product("Sainsbury's Blueberries 200g", productUrl, 45, 1.75, "by Sainsbury's blueberries");
+
+        assertEquals(expectedProduct.getProductKcalPer100g(), product.getProductKcalPer100g());
+        assertEquals(expectedProduct.getProductUnitPrice(), product.getProductUnitPrice());
+        assertEquals(expectedProduct.getProductDescription(), product.getProductDescription());
     }
 
     @Test

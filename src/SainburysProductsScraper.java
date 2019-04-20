@@ -55,10 +55,17 @@ class SainburysProductsScraper {
         try {
             String nutritionLevelXPathQuery = "//td[contains(@class, 'nutritionLevel1')]";
             List<DomElement> nutritionLevelListDomElements = productPage.getByXPath(nutritionLevelXPathQuery);
-            DomElement nutritionLevelElement = nutritionLevelListDomElements.get(0);
-            DomNode kCalNode = nutritionLevelElement.getFirstChild();
-            String kCalString = kCalNode.toString();
-            return ConvertAndFormatKCalStringToInt(kCalString);
+            DomNodeList<DomElement> allTdTags = productPage.getElementsByTagName("td");
+
+            for (DomElement tdTag: allTdTags)
+            {
+                DomNode tagValue = tdTag.getFirstChild();
+                String tagString = tagValue.asText();
+                if(tagString.contains("kcal")) {
+                    return ConvertAndFormatKCalStringToInt(tagString);
+                }
+            }
+            return 0;
         }
         catch(Exception e)
         {

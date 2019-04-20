@@ -6,13 +6,15 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ecf70ee-9bcf-4192-a164-310f49103112" name="Default Changelist" comment="Update readme, run code cleaning">
+    <list default="true" id="4ecf70ee-9bcf-4192-a164-310f49103112" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SainsburysNathanLeigh/META-INF/SainsburysNathanLeigh.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SainsburysNathanLeigh/SainburysProductsScraper.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SainsburysNathanLeigh/SainburysProductsScraper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SainsburysNathanLeigh/SainburysProductsScraperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SainsburysNathanLeigh/SainburysProductsScraperTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SainburysProductsScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SainburysProductsScraper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SainsburysProductsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SainsburysProductsMain.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +31,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+            <state relative-caret-position="34">
+              <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="266">
+              <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -68,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="918">
-              <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SainsburysProductsMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="243">
+              <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -91,11 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-80">
-              <caret line="65" column="96" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="96" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -135,12 +134,12 @@
         <option value="$PROJECT_DIR$/tests/ServerSideTests.java" />
         <option value="$PROJECT_DIR$/src/ServerSide.java" />
         <option value="$PROJECT_DIR$/src/ServerSideTest.java" />
-        <option value="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/ProductTest.java" />
         <option value="$PROJECT_DIR$/src/Product.java" />
-        <option value="$PROJECT_DIR$/src/SainburysProductsScraper.java" />
         <option value="$PROJECT_DIR$/src/SainsburysProductsMain.java" />
+        <option value="$PROJECT_DIR$/src/SainburysProductsScraper.java" />
+        <option value="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -168,6 +167,17 @@
               <item name="SainsburysNathanLeigh" type="b2602c69:ProjectViewProjectNode" />
               <item name="SainsburysNathanLeigh" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SainsburysNathanLeigh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SainsburysNathanLeigh" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SainsburysNathanLeigh" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SainsburysNathanLeigh" type="462c0819:PsiDirectoryNode" />
+              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SainsburysNathanLeigh" type="b2602c69:ProjectViewProjectNode" />
@@ -257,11 +267,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SainburysProductsScraperTest.GetAllProductsBringsBackMultiplePageUrls" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SainsburysNathanLeigh" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SainburysProductsScraperTest" />
-      <option name="METHOD_NAME" value="GetAllProductsBringsBackMultiplePageUrls" />
+      <option name="METHOD_NAME" value="GetProductInformationFromProductUrl" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -279,18 +289,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.SainsburysProductsMain" />
-      <item itemvalue="JUnit.SainburysProductsScraperTest.GetAllProductsBringsBackMultiplePageUrls" />
       <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductNameAndURIForFirstProduct" />
       <item itemvalue="JUnit.All in SainsburysNathanLeigh" />
       <item itemvalue="JUnit.ProductTest.generateTotalJsonForSingleProduct" />
+      <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductInformationFromProductUrl" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in SainsburysNathanLeigh" />
+        <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductInformationFromProductUrl" />
         <item itemvalue="JUnit.ProductTest.generateTotalJsonForSingleProduct" />
         <item itemvalue="Application.SainsburysProductsMain" />
         <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductNameAndURIForFirstProduct" />
-        <item itemvalue="JUnit.SainburysProductsScraperTest.GetAllProductsBringsBackMultiplePageUrls" />
       </list>
     </recent_temporary>
   </component>
@@ -445,38 +455,45 @@
       <option name="project" value="LOCAL" />
       <updated>1555784288917</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Update readme, run code cleaning, add check for url arg when running main">
+      <created>1555785180600</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1555785180600</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProductTest_generateTotalJsonForSingleProduct - 2019.04.20 at 18h 42m 38s.xml">
-      <configuration name="ProductTest.generateTotalJsonForSingleProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_generateTotalJsonForSingleProduct - 2019.04.20 at 18h 43m 00s.xml">
-      <configuration name="ProductTest.generateTotalJsonForSingleProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_generateTotalJsonForSingleProduct - 2019.04.20 at 18h 43m 13s.xml">
-      <configuration name="ProductTest.generateTotalJsonForSingleProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_generateTotalJsonForSingleProduct - 2019.04.20 at 18h 46m 47s.xml">
-      <configuration name="ProductTest.generateTotalJsonForSingleProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_generateTotalJsonForSingleProduct - 2019.04.20 at 18h 46m 51s.xml">
-      <configuration name="ProductTest.generateTotalJsonForSingleProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_generateTotalJsonForSingleProduct - 2019.04.20 at 18h 47m 46s.xml">
-      <configuration name="ProductTest.generateTotalJsonForSingleProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ProductTest_generateTotalJsonForSingleProduct - 2019.04.20 at 18h 48m 25s.xml">
-      <configuration name="ProductTest.generateTotalJsonForSingleProduct" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_SainsburysNathanLeigh - 2019.04.20 at 18h 48m 41s.xml">
-      <configuration name="All in SainsburysNathanLeigh" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_SainsburysNathanLeigh - 2019.04.20 at 19h 25m 26s.xml">
-      <configuration name="All in SainsburysNathanLeigh" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_SainsburysNathanLeigh - 2019.04.20 at 19h 29m 09s.xml">
+      <configuration name="All in SainsburysNathanLeigh" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 22h 00m 52s.xml">
+      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 22h 02m 29s.xml">
+      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 22h 06m 47s.xml">
+      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 22h 08m 54s.xml">
+      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 22h 13m 44s.xml">
+      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 22h 13m 50s.xml">
+      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 22h 14m 29s.xml">
+      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 22h 14m 37s.xml">
+      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_SainsburysNathanLeigh - 2019.04.20 at 22h 14m 56s.xml">
       <configuration name="All in SainsburysNathanLeigh" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -492,7 +509,7 @@
   <component name="ToolWindowManager">
     <frame x="4" y="42" width="800" height="576" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32972974" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20675676" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,14 +519,14 @@
       <window_info anchor="bottom" id="Inspection Results" weight="0.25675675" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2927928" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2927928" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4527027" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32882884" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3265766" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.22747748" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.22747748" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32882884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -546,28 +563,17 @@
     <MESSAGE value="Add artifact and manifest, update readme with how to run" />
     <MESSAGE value="Add jar" />
     <MESSAGE value="Update readme, run code cleaning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update readme, run code cleaning" />
+    <MESSAGE value="Update readme, run code cleaning, add check for url arg when running main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update readme, run code cleaning, add check for url arg when running main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SainburysProductsScraper.java</url>
-          <line>60</line>
-          <properties />
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SainsburysProductsMain.java</url>
           <line>25</line>
           <properties />
           <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SainburysProductsScraper.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SainsburysProductsMain.java</url>
@@ -592,6 +598,18 @@
           <line>57</line>
           <properties />
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SainburysProductsScraper.java</url>
+          <line>71</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SainburysProductsScraper.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -636,10 +654,33 @@
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="918">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SainsburysProductsMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="57" column="22" selection-start-line="57" selection-start-column="22" selection-end-line="57" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -658,43 +699,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="65" column="96" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SainsburysProductsMain.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="266">
+          <caret line="130" column="1" selection-start-line="130" selection-start-column="1" selection-end-line="130" selection-end-column="1" />
         </state>
       </provider>
     </entry>
