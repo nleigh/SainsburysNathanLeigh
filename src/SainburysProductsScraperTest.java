@@ -46,4 +46,22 @@ class SainburysProductsScraperTest {
         assertEquals("https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html", productUrl);
 
     }
+
+    @Test
+    void GetProductInformationFromProductUrl(){
+        String productUrl = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
+        SainburysProductsScraper scraper = new SainburysProductsScraper();
+        Product product = new Product("Sainsbury's Strawberries 400g", productUrl);
+        product = scraper.GetProductInformation(product);
+
+        Product expectedProduct = new Product("Sainsbury's Strawberries 400g", productUrl, 33, 1.75, "by Sainsbury's strawberries");
+
+        assertEquals(expectedProduct.getProductName(), product.getProductName());
+        assertEquals(expectedProduct.getProductUrl(), product.getProductUrl());
+        assertEquals(expectedProduct.getProductKcalPer100g(), product.getProductKcalPer100g());
+        assertEquals(expectedProduct.getProductUnitPrice(), product.getProductUnitPrice());
+        assertEquals(expectedProduct.getProductDescription(), product.getProductDescription());
+
+
+    }
 }

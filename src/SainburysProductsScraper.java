@@ -42,4 +42,12 @@ public class SainburysProductsScraper {
         String productUrl = aHref.getBaseURI();
         return productUrl;
     }
+
+    public Product GetProductInformation(Product product){
+
+        product = new Product("Sainsbury's Strawberries 400g", "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html", 33, 1.75, "by Sainsbury's strawberries");
+
+        return product;
+    }
+
 }
