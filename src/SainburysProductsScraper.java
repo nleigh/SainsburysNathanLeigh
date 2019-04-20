@@ -31,6 +31,21 @@ public class SainburysProductsScraper {
         return products;
     }
 
+    public Product GetProductInformation(Product product){
+
+        HtmlPage productPage = GetUrlResponse(product.getProductUrl());
+
+        double unitPrice = getProductUnitPriceFromProductPage(productPage);
+        int productKCalPer100g = getProductKCalPer100gFromProductPage(productPage);
+        String productDescription = getProductDescriptionFromProductPage(productPage);
+
+        Product populatedProduct = new Product(product.getProductName(), product.getProductUrl(), productKCalPer100g, unitPrice, productDescription);
+        return populatedProduct;
+    }
+
+
+
+
     public String GetProductName(DomElement product) {
         HtmlElement aHref = product.getElementsByTagName("a").get(0);
         String urlAsText = aHref.asText();
@@ -43,11 +58,19 @@ public class SainburysProductsScraper {
         return productUrl;
     }
 
-    public Product GetProductInformation(Product product){
+    private int getProductKCalPer100gFromProductPage(HtmlPage productPage) {
+        return 33;
+    }
 
-        product = new Product("Sainsbury's Strawberries 400g", "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html", 33, 1.75, "by Sainsbury's strawberries");
+    private double getProductUnitPriceFromProductPage(HtmlPage productPage) {
+        return 1.75;
+    }
 
-        return product;
+
+    private String getProductDescriptionFromProductPage(HtmlPage productPage) {
+
+        return "by Sainsbury's strawberries";
+
     }
 
 }
