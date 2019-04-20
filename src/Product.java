@@ -9,6 +9,7 @@ public class Product {
     private int ProductKCalPer100g;
     private double ProductUnitPrice;
     private String ProductDescription;
+    private static double VAT_AMOUNT = 20;
 
 
     public Product(String productName, String productUrl, int productKcalPer100g, double productUnitPrice, String productDescription) {
@@ -28,6 +29,7 @@ public class Product {
 
         JsonArray products = new JsonArray();
 
+        double grossTotal = 0;
         for (Product prod : productList) {
             JsonObject product = new JsonObject();
             product.addProperty("title", prod.ProductName);
@@ -36,12 +38,21 @@ public class Product {
                 product.addProperty("kcal_per_100g", prod.ProductKCalPer100g);
             }
             product.addProperty("unit_price", prod.ProductUnitPrice);
+            grossTotal += prod.ProductUnitPrice;
+
             product.addProperty("description", prod.ProductDescription);
             products.add(product);
         }
 
         JsonObject results = new JsonObject();
         results.add("results", products);
+
+
+        JsonObject total = new JsonObject();
+        total.addProperty("gross", grossTotal);
+        double vat = (grossTotal / 100) * VAT_AMOUNT;
+        total.addProperty("vat", vat);
+        results.add("total", total);
 
         return results.toString();
     }

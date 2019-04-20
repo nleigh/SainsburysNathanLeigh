@@ -37,4 +37,22 @@ public class ProductTest {
 
     }
 
+    @Test
+    void generateTotalJsonForSingleProduct() {
+        Product product = new Product("test title", "www", 123, 2.40, "test description");
+        List<Product> products = new ArrayList<Product>();
+        products.add(product);
+        String result = Product.generateResultsJson(products);
+
+        JSONObject obj = new JSONObject(result);
+        JSONObject total = obj.getJSONObject("total");
+
+        double gross = total.getDouble("gross");
+        double vat = total.getDouble("vat");
+
+        assertEquals(2.40, gross);
+        assertEquals(0.48, vat);
+
+    }
+
 }
