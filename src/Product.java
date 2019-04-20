@@ -31,6 +31,12 @@ public class Product {
         for (Product prod : productList) {
             JsonObject product = new JsonObject();
             product.addProperty("title", prod.ProductName);
+
+            if (prod.ProductKCalPer100g != 0){
+                product.addProperty("kcal_per_100g", prod.ProductKCalPer100g);
+            }
+            product.addProperty("unit_price", prod.ProductUnitPrice);
+            product.addProperty("description", prod.ProductDescription);
             products.add(product);
         }
 

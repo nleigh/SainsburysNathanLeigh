@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ecf70ee-9bcf-4192-a164-310f49103112" name="Default Changelist" comment="">
+    <list default="true" id="4ecf70ee-9bcf-4192-a164-310f49103112" name="Default Changelist" comment="Add product information to json output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SainburysProductsScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SainburysProductsScraper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="76" column="40" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="40" />
+            <state relative-caret-position="-85">
+              <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#812#821#0" expanded="true" />
@@ -34,42 +34,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-657">
-              <caret line="8" column="34" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="34" />
+            <state relative-caret-position="37">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1130#1131#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
-                <element signature="e#1200#1201#0" expanded="true" />
-                <element signature="e#1234#1235#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1233#1234#0" expanded="true" />
-                <element signature="e#1286#1287#0" expanded="true" />
-                <element signature="e#1318#1319#0" expanded="true" />
-                <element signature="e#1356#1357#0" expanded="true" />
-                <element signature="e#1390#1391#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1600#1601#0" expanded="true" />
+                <element signature="e#1673#1674#0" expanded="true" />
+                <element signature="e#1755#1756#0" expanded="true" />
+                <element signature="e#1837#1838#0" expanded="true" />
+                <element signature="e#1923#1924#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="52" column="17" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="80" column="4" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+            <state relative-caret-position="248">
+              <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,10 +101,10 @@
         <option value="$PROJECT_DIR$/tests/ServerSideTests.java" />
         <option value="$PROJECT_DIR$/src/ServerSide.java" />
         <option value="$PROJECT_DIR$/src/ServerSideTest.java" />
-        <option value="$PROJECT_DIR$/src/ProductTest.java" />
-        <option value="$PROJECT_DIR$/src/Product.java" />
-        <option value="$PROJECT_DIR$/src/SainburysProductsScraper.java" />
         <option value="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" />
+        <option value="$PROJECT_DIR$/src/SainburysProductsScraper.java" />
+        <option value="$PROJECT_DIR$/src/Product.java" />
+        <option value="$PROJECT_DIR$/src/ProductTest.java" />
       </list>
     </option>
   </component>
@@ -200,11 +195,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SainburysProductsScraperTest.GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductTest.generateResultsJsonForSingleProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SainsburysNathanLeigh" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductTest" />
+      <option name="METHOD_NAME" value="generateResultsJsonForSingleProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTest.generateResultsJsonForSingleProductOmitsKcalWhenKcalInProductIs0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SainsburysNathanLeigh" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ProductTest" />
+      <option name="METHOD_NAME" value="generateResultsJsonForSingleProductOmitsKcalWhenKcalInProductIs0" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SainburysProductsScraperTest.ConvertkCalStringToDoubleWhenStringContainsKcal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SainsburysNathanLeigh" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SainburysProductsScraperTest" />
-      <option name="METHOD_NAME" value="GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines" />
+      <option name="METHOD_NAME" value="ConvertkCalStringToDoubleWhenStringContainsKcal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -220,39 +235,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SainburysProductsScraperTest.formatDescriptionStringReturnsEmptyWhenNoStringProvided" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SainsburysNathanLeigh" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SainburysProductsScraperTest" />
-      <option name="METHOD_NAME" value="formatDescriptionStringReturnsEmptyWhenNoStringProvided" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SainburysProductsScraperTest.formatDescriptionStringReturnsSingleLineWhenMultipleLines" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SainsburysNathanLeigh" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SainburysProductsScraperTest" />
-      <option name="METHOD_NAME" value="formatDescriptionStringReturnsSingleLineWhenMultipleLines" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductInformationFromProductUrl" />
       <item itemvalue="JUnit.All in SainsburysNathanLeigh" />
-      <item itemvalue="JUnit.SainburysProductsScraperTest.formatDescriptionStringReturnsSingleLineWhenMultipleLines" />
-      <item itemvalue="JUnit.SainburysProductsScraperTest.formatDescriptionStringReturnsEmptyWhenNoStringProvided" />
-      <item itemvalue="JUnit.SainburysProductsScraperTest.GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines" />
+      <item itemvalue="JUnit.SainburysProductsScraperTest.ConvertkCalStringToDoubleWhenStringContainsKcal" />
+      <item itemvalue="JUnit.ProductTest.generateResultsJsonForSingleProduct" />
+      <item itemvalue="JUnit.ProductTest.generateResultsJsonForSingleProductOmitsKcalWhenKcalInProductIs0" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in SainsburysNathanLeigh" />
-        <item itemvalue="JUnit.SainburysProductsScraperTest.GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines" />
-        <item itemvalue="JUnit.SainburysProductsScraperTest.formatDescriptionStringReturnsEmptyWhenNoStringProvided" />
-        <item itemvalue="JUnit.SainburysProductsScraperTest.formatDescriptionStringReturnsSingleLineWhenMultipleLines" />
+        <item itemvalue="JUnit.ProductTest.generateResultsJsonForSingleProductOmitsKcalWhenKcalInProductIs0" />
+        <item itemvalue="JUnit.ProductTest.generateResultsJsonForSingleProduct" />
+        <item itemvalue="JUnit.SainburysProductsScraperTest.ConvertkCalStringToDoubleWhenStringContainsKcal" />
         <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductInformationFromProductUrl" />
       </list>
     </recent_temporary>
@@ -352,39 +347,53 @@
       <option name="project" value="LOCAL" />
       <updated>1555768127248</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Implement only extracting 1st line of product description&#10;&#10;Refactor and extract code, add tests for extracted functions">
+      <created>1555772768439</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1555772768439</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Implement getProductKCalPer100gFromProductPage&#10;&#10;May need further tests for when kcal not present">
+      <created>1555773893422</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1555773893422</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 30m 28s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 16h 11m 55s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 30m 43s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 16h 15m 25s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 36m 15s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 16h 15m 31s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 36m 56s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 16h 16m 57s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 45m 33s.xml">
-      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    <history-entry file="SainburysProductsScraperTest_ConvertkCalStringToDoubleWhenStringContainsKcal - 2019.04.20 at 16h 20m 45s.xml">
+      <configuration name="SainburysProductsScraperTest.ConvertkCalStringToDoubleWhenStringContainsKcal" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 47m 13s.xml">
-      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    <history-entry file="ProductTest_generateResultsJsonForSingleProduct - 2019.04.20 at 16h 31m 15s.xml">
+      <configuration name="ProductTest.generateResultsJsonForSingleProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 47m 18s.xml">
-      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    <history-entry file="ProductTest_generateResultsJsonForSingleProduct - 2019.04.20 at 16h 31m 26s.xml">
+      <configuration name="ProductTest.generateResultsJsonForSingleProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 48m 27s.xml">
-      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    <history-entry file="ProductTest_generateResultsJsonForSingleProduct - 2019.04.20 at 16h 32m 30s.xml">
+      <configuration name="ProductTest.generateResultsJsonForSingleProduct" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_formatDescriptionStringReturnsSingleLineWhenMultipleLines - 2019.04.20 at 15h 57m 22s.xml">
-      <configuration name="SainburysProductsScraperTest.formatDescriptionStringReturnsSingleLineWhenMultipleLines" configurationId="JUnit" />
+    <history-entry file="ProductTest_generateResultsJsonForSingleProductOmitsKcalWhenKcalInProductIs0 - 2019.04.20 at 16h 35m 48s.xml">
+      <configuration name="ProductTest.generateResultsJsonForSingleProductOmitsKcalWhenKcalInProductIs0" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_formatDescriptionStringReturnsEmptyWhenNoStringProvided - 2019.04.20 at 15h 59m 00s.xml">
-      <configuration name="SainburysProductsScraperTest.formatDescriptionStringReturnsEmptyWhenNoStringProvided" configurationId="JUnit" />
+    <history-entry file="ProductTest_generateResultsJsonForSingleProductOmitsKcalWhenKcalInProductIs0 - 2019.04.20 at 16h 36m 56s.xml">
+      <configuration name="ProductTest.generateResultsJsonForSingleProductOmitsKcalWhenKcalInProductIs0" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -445,16 +454,24 @@
     <MESSAGE value="Add methods to find the each of the required data values on the product page&#10; &#10; Return expected values for now" />
     <MESSAGE value="Implement getUnit price&#10;&#10;Remove white space, any invalid chars, and convert to double" />
     <MESSAGE value="Implement getProductDescription" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implement getProductDescription" />
+    <MESSAGE value="Implement only extracting 1st line of product description&#10;&#10;Refactor and extract code, add tests for extracted functions" />
+    <MESSAGE value="Implement getProductKCalPer100gFromProductPage&#10;&#10;May need further tests for when kcal not present" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement getProductKCalPer100gFromProductPage&#10;&#10;May need further tests for when kcal not present" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SainburysProductsScraper.java</url>
-          <line>91</line>
+          <line>105</line>
           <properties />
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SainburysProductsScraper.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -485,30 +502,20 @@
     <entry file="file://$PROJECT_DIR$/tests/ServerSideTests" />
     <entry file="file://$PROJECT_DIR$/tests/ServerSideTests.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/Product.java">
+    <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-657">
-          <caret line="8" column="34" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="34" />
+        <state relative-caret-position="248">
+          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1234#1235#0" expanded="true" />
-            <element signature="e#1199#1200#0" expanded="true" />
-            <element signature="e#1233#1234#0" expanded="true" />
-            <element signature="e#1286#1287#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1356#1357#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="76" column="40" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="40" />
+        <state relative-caret-position="-85">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#812#821#0" expanded="true" />
@@ -516,20 +523,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Product.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+        <state relative-caret-position="37">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1600#1601#0" expanded="true" />
+            <element signature="e#1673#1674#0" expanded="true" />
+            <element signature="e#1755#1756#0" expanded="true" />
+            <element signature="e#1837#1838#0" expanded="true" />
+            <element signature="e#1923#1924#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraperTest.java">
+    <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="80" column="4" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+        <state relative-caret-position="102">
+          <caret line="52" column="17" selection-start-line="52" selection-start-column="8" selection-end-line="52" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
