@@ -49,7 +49,7 @@ class SainburysProductsScraperTest {
 
     @Test
     void GetProductInformationFromProductUrl(){
-        String productUrl = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
+        String productUrl = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/shop/gb/groceries/berries-cherries-currants/sainsburys-british-strawberries-400g.html";
         SainburysProductsScraper scraper = new SainburysProductsScraper();
         Product product = new Product("Sainsbury's Strawberries 400g", productUrl);
         product = scraper.GetProductInformation(product);

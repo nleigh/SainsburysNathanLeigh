@@ -59,11 +59,21 @@ public class SainburysProductsScraper {
     }
 
     private int getProductKCalPer100gFromProductPage(HtmlPage productPage) {
+
         return 33;
     }
 
     private double getProductUnitPriceFromProductPage(HtmlPage productPage) {
-        return 1.75;
+        String productPriceXPathQuery = "//p[contains(@class, 'pricePerUnit')]";
+        List<DomElement> productListDomElements = productPage.getByXPath(productPriceXPathQuery);
+        DomElement pTagUnitPrice = productListDomElements.get(0);
+        DomNode unitPriceNode = pTagUnitPrice.getFirstChild();
+
+        String stringUnitPrice = unitPriceNode.getTextContent();
+        stringUnitPrice = stringUnitPrice.trim();
+        stringUnitPrice = stringUnitPrice.replace("£", "");
+        double unitPrice = Double.parseDouble(stringUnitPrice);
+        return unitPrice;
     }
 
 
