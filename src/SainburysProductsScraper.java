@@ -43,9 +43,6 @@ public class SainburysProductsScraper {
         return populatedProduct;
     }
 
-
-
-
     public String GetProductName(DomElement product) {
         HtmlElement aHref = product.getElementsByTagName("a").get(0);
         String urlAsText = aHref.asText();

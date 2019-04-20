@@ -53,15 +53,20 @@ public class Product {
         double grossTotalDouble = grossTotal.doubleValue();
         total.addProperty("gross", grossTotalDouble);
 
-        BigDecimal hundred = new BigDecimal(String.valueOf(100));
-        BigDecimal onePercentOfGross = grossTotal.divide(hundred, 2);
-        BigDecimal vatAmount = onePercentOfGross.multiply(new BigDecimal(String.valueOf(VAT_AMOUNT)));
-        double vat = vatAmount.doubleValue();
+        double vat = calculateVat(grossTotal);
 
         total.addProperty("vat", vat);
         results.add("total", total);
 
         return results.toString();
+    }
+
+    private static double calculateVat(BigDecimal grossTotal) {
+        BigDecimal hundred = new BigDecimal("100.00");
+        BigDecimal vatPercentage = new BigDecimal("20.00");
+        BigDecimal onePercentOfGross = grossTotal.divide(hundred, 3, BigDecimal.ROUND_HALF_UP);
+        BigDecimal vatAmount = onePercentOfGross.multiply(vatPercentage);
+        return vatAmount.doubleValue();
     }
 
 
