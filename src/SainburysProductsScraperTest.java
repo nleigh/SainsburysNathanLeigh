@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class SainburysProductsScraperTest {
 
-    private String URL = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
+    private final String URL = "https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html";
     @Test
     void GetUrlResponseReturns200WhenUrlIsValid() {
         SainburysProductsScraper sainburysProductsScraper = new SainburysProductsScraper();

@@ -5,14 +5,13 @@ import java.util.List;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 
-public class ProductTest {
+class ProductTest {
 
     @Test
-    public void generateResultsJsonForSingleProduct() {
+    void generateResultsJsonForSingleProduct() {
         Product product = new Product("test title", "www", 123, 1.11, "test description");
-        List<Product> products = new ArrayList<Product>();
+        List<Product> products = new ArrayList<>();
         products.add(product);
         String result = Product.generateResultsJson(products);
 
@@ -40,7 +39,7 @@ public class ProductTest {
     @Test
     void generateTotalJsonForSingleProduct() {
         Product product = new Product("test title", "www", 123, 2.40, "test description");
-        List<Product> products = new ArrayList<Product>();
+        List<Product> products = new ArrayList<>();
         products.add(product);
         String result = Product.generateResultsJson(products);
 
@@ -55,12 +54,12 @@ public class ProductTest {
     }
 
     @Test
-    void generateTotalJsonForMultpleProducts() {
+    void generateTotalJsonForMultipleProducts() {
         Product product1 = new Product("test1", "www", 123, 1.75, "test description");
         Product product2 = new Product("test2", "www", 123, 1.75, "test description");
         Product product3 = new Product("test3", "www", 123, 1.5, "test description");
 
-        List<Product> products = new ArrayList<Product>();
+        List<Product> products = new ArrayList<>();
         products.add(product1);
         products.add(product2);
         products.add(product3);

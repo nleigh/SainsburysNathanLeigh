@@ -3,9 +3,15 @@ import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SainsburysProductsMain {
+class SainsburysProductsMain {
 
     public static void main(String[] args){
+        if(args.length == 0)
+        {
+            System.out.println("Please provide the test url as an argument");
+            System.exit(0);
+        }
+
         SainburysProductsScraper sainburysProductsScraper = new SainburysProductsScraper();
         String url = args[0];
 

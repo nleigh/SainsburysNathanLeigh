@@ -2,20 +2,23 @@
 
 Java Programming challenge which scrapes a test Sainsburys website and returns product details as JSON.
 
+More Details can be found here.
+
+
+https://jsainsburyplc.github.io/serverside-test/
+
 
 
 ## How to run
 
 Run with the sainsburys test site URL
 ```
-java -jar out/artifacts/
-SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar <URL>
+java -jar out/artifacts/SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar <URL>
 ```
+
 Example
 ```
-java -jar out/artifacts/
-SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar https://jsainsburyplc.github.io/serverside-test/sit
-e/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html
+java -jar out/artifacts/SainsburysNathanLeigh_jar/SainsburysNathanLeigh.jar https://jsainsburyplc.github.io/serverside-test/site/www.sainsburys.co.uk/webapp/wcs/stores/servlet/gb/groceries/berries-cherries-currants6039.html
 ```
 
 ## Expected Output
