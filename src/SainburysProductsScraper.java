@@ -78,9 +78,15 @@ public class SainburysProductsScraper {
 
 
     private String getProductDescriptionFromProductPage(HtmlPage productPage) {
+        String productTextXPathQuery = "//div[contains(@class, 'productText')]";
+        List<DomElement> productListDomElements = productPage.getByXPath(productTextXPathQuery);
+        DomElement firstClassProductDescription = productListDomElements.get(0);
 
-        return "by Sainsbury's strawberries";
+        DomNodeList<HtmlElement> pTagProductDescription = firstClassProductDescription.getElementsByTagName("p");
+        HtmlElement firstPTagProductDescription = pTagProductDescription.get(0);
+        String description = firstPTagProductDescription.getFirstChild().asText();
 
+        return description;
     }
 
 }
