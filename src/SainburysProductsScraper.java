@@ -59,6 +59,7 @@ public class SainburysProductsScraper {
     }
 
     private int getProductKCalPer100gFromProductPage(HtmlPage productPage) {
+        // Omit the kcal_per_100g field, if calories are unavailable.
 
         return 33;
     }
@@ -68,12 +69,15 @@ public class SainburysProductsScraper {
         List<DomElement> productListDomElements = productPage.getByXPath(productPriceXPathQuery);
         DomElement pTagUnitPrice = productListDomElements.get(0);
         DomNode unitPriceNode = pTagUnitPrice.getFirstChild();
-
         String stringUnitPrice = unitPriceNode.getTextContent();
-        stringUnitPrice = stringUnitPrice.trim();
-        stringUnitPrice = stringUnitPrice.replace("£", "");
-        double unitPrice = Double.parseDouble(stringUnitPrice);
+        double unitPrice = GetUnitPriceFromString(stringUnitPrice);
         return unitPrice;
+    }
+
+    public double GetUnitPriceFromString(String unitPriceString) {
+        unitPriceString = unitPriceString.trim();
+        unitPriceString = unitPriceString.replace("£", "");
+        return Double.parseDouble(unitPriceString);
     }
 
 
@@ -84,9 +88,19 @@ public class SainburysProductsScraper {
 
         DomNodeList<HtmlElement> pTagProductDescription = firstClassProductDescription.getElementsByTagName("p");
         HtmlElement firstPTagProductDescription = pTagProductDescription.get(0);
-        String description = firstPTagProductDescription.getFirstChild().asText();
+        String descriptionString = firstPTagProductDescription.getFirstChild().asText();
 
-        return description;
+        return formatDescriptionString(descriptionString);
+    }
+
+    public String formatDescriptionString(String descriptionString) {
+        if (descriptionString.equals("") || descriptionString.isEmpty()){
+            return "";
+        }
+
+        // If the description is spread over multiple lines, scrape only the first line.
+        String[] firstLineOfDescription = descriptionString.split("\n");
+        return firstLineOfDescription[0];
     }
 
 }

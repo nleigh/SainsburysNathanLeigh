@@ -56,12 +56,32 @@ class SainburysProductsScraperTest {
 
         Product expectedProduct = new Product("Sainsbury's Strawberries 400g", productUrl, 33, 1.75, "by Sainsbury's strawberries");
 
-        assertEquals(expectedProduct.getProductName(), product.getProductName());
-        assertEquals(expectedProduct.getProductUrl(), product.getProductUrl());
         assertEquals(expectedProduct.getProductKcalPer100g(), product.getProductKcalPer100g());
         assertEquals(expectedProduct.getProductUnitPrice(), product.getProductUnitPrice());
         assertEquals(expectedProduct.getProductDescription(), product.getProductDescription());
+    }
 
+    @Test
+    void formatDescriptionStringReturnsSingleLineWhenMultipleLines(){
+        String multipleLineString = "Line1\nLine2\nLine3";
+        SainburysProductsScraper scraper = new SainburysProductsScraper();
+        String result = scraper.formatDescriptionString(multipleLineString);
+        assertEquals("Line1", result);
+    }
 
+    @Test
+    void formatDescriptionStringReturnsEmptyWhenEmptyStringProvided(){
+        String emptyString = "";
+        SainburysProductsScraper scraper = new SainburysProductsScraper();
+        String result = scraper.formatDescriptionString(emptyString);
+        assertEquals("", result);
+    }
+
+    @Test
+    void GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines(){
+        SainburysProductsScraper scraper = new SainburysProductsScraper();
+        String unitPrice = " £1.23 \n ";
+        double result = scraper.GetUnitPriceFromString(unitPrice);
+        assertEquals(1.23, result);
     }
 }

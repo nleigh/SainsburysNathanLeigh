@@ -18,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+            <state relative-caret-position="74">
+              <caret line="76" column="40" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#812#821#0" expanded="true" />
@@ -56,7 +56,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
+            <state relative-caret-position="44">
               <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,11 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraperTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="51" column="188" selection-start-line="51" selection-start-column="188" selection-end-line="51" selection-end-column="188" />
+            <state relative-caret-position="54">
+              <caret line="80" column="4" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,6 +90,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>serverSide</find>
+      <find>unitp</find>
     </findStrings>
     <replaceStrings>
       <replace>sainburysProductsScraper</replace>
@@ -107,8 +108,8 @@
         <option value="$PROJECT_DIR$/src/ServerSideTest.java" />
         <option value="$PROJECT_DIR$/src/ProductTest.java" />
         <option value="$PROJECT_DIR$/src/Product.java" />
-        <option value="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" />
         <option value="$PROJECT_DIR$/src/SainburysProductsScraper.java" />
+        <option value="$PROJECT_DIR$/src/SainburysProductsScraperTest.java" />
       </list>
     </option>
   </component>
@@ -190,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SainburysProductsScraperTest.GetProductInformationFromProductUrl">
+  <component name="RunManager" selected="JUnit.All in SainsburysNathanLeigh">
     <configuration name="All in SainsburysNathanLeigh" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SainsburysNathanLeigh" />
       <option name="PACKAGE_NAME" value="" />
@@ -199,21 +200,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductTest.generateResultsJsonForSingleProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="SainsburysNathanLeigh" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ProductTest" />
-      <option name="METHOD_NAME" value="generateResultsJsonForSingleProduct" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SainburysProductsScraperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SainburysProductsScraperTest.GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SainsburysNathanLeigh" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SainburysProductsScraperTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,30 +220,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SainburysProductsScraperTest.GetUrlResponseReturns200WhenUrlIsValid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SainburysProductsScraperTest.formatDescriptionStringReturnsEmptyWhenNoStringProvided" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SainsburysNathanLeigh" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SainburysProductsScraperTest" />
-      <option name="METHOD_NAME" value="GetUrlResponseReturns200WhenUrlIsValid" />
+      <option name="METHOD_NAME" value="formatDescriptionStringReturnsEmptyWhenNoStringProvided" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SainburysProductsScraperTest.formatDescriptionStringReturnsSingleLineWhenMultipleLines" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="SainsburysNathanLeigh" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SainburysProductsScraperTest" />
+      <option name="METHOD_NAME" value="formatDescriptionStringReturnsSingleLineWhenMultipleLines" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SainburysProductsScraperTest.GetUrlResponseReturns200WhenUrlIsValid" />
-      <item itemvalue="JUnit.SainburysProductsScraperTest" />
-      <item itemvalue="JUnit.ProductTest.generateResultsJsonForSingleProduct" />
       <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductInformationFromProductUrl" />
       <item itemvalue="JUnit.All in SainsburysNathanLeigh" />
+      <item itemvalue="JUnit.SainburysProductsScraperTest.formatDescriptionStringReturnsSingleLineWhenMultipleLines" />
+      <item itemvalue="JUnit.SainburysProductsScraperTest.formatDescriptionStringReturnsEmptyWhenNoStringProvided" />
+      <item itemvalue="JUnit.SainburysProductsScraperTest.GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductInformationFromProductUrl" />
         <item itemvalue="JUnit.All in SainsburysNathanLeigh" />
-        <item itemvalue="JUnit.ProductTest.generateResultsJsonForSingleProduct" />
-        <item itemvalue="JUnit.SainburysProductsScraperTest" />
-        <item itemvalue="JUnit.SainburysProductsScraperTest.GetUrlResponseReturns200WhenUrlIsValid" />
+        <item itemvalue="JUnit.SainburysProductsScraperTest.GetDoubleUnitPriceFromStringWhenStringContainsSymbolsAndNewLines" />
+        <item itemvalue="JUnit.SainburysProductsScraperTest.formatDescriptionStringReturnsEmptyWhenNoStringProvided" />
+        <item itemvalue="JUnit.SainburysProductsScraperTest.formatDescriptionStringReturnsSingleLineWhenMultipleLines" />
+        <item itemvalue="JUnit.SainburysProductsScraperTest.GetProductInformationFromProductUrl" />
       </list>
     </recent_temporary>
   </component>
@@ -336,39 +338,53 @@
       <option name="project" value="LOCAL" />
       <updated>1555765679510</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implement getUnit price&#10;&#10;Remove white space, any invalid chars, and convert to double">
+      <created>1555767117410</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1555767117410</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Implement getProductDescription">
+      <created>1555768127248</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1555768127248</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 12m 39s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 30m 28s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 14m 14s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 30m 43s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 14m 44s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 36m 15s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 20m 59s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 36m 56s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 21m 05s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 45m 33s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 21m 14s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 47m 13s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 25m 33s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 47m 18s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 26m 04s.xml">
+    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 48m 27s.xml">
       <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 26m 18s.xml">
-      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    <history-entry file="SainburysProductsScraperTest_formatDescriptionStringReturnsSingleLineWhenMultipleLines - 2019.04.20 at 15h 57m 22s.xml">
+      <configuration name="SainburysProductsScraperTest.formatDescriptionStringReturnsSingleLineWhenMultipleLines" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SainburysProductsScraperTest_GetProductInformationFromProductUrl - 2019.04.20 at 14h 27m 07s.xml">
-      <configuration name="SainburysProductsScraperTest.GetProductInformationFromProductUrl" configurationId="JUnit" />
+    <history-entry file="SainburysProductsScraperTest_formatDescriptionStringReturnsEmptyWhenNoStringProvided - 2019.04.20 at 15h 59m 00s.xml">
+      <configuration name="SainburysProductsScraperTest.formatDescriptionStringReturnsEmptyWhenNoStringProvided" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -393,7 +409,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3265766" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3265766" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.6126126" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,7 +417,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3265766" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.22747748" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32882884" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32882884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -427,22 +443,25 @@
     <MESSAGE value="Generate part of Json for product" />
     <MESSAGE value="Write expected test and Stub functionality for GetProductInformation" />
     <MESSAGE value="Add methods to find the each of the required data values on the product page&#10; &#10; Return expected values for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add methods to find the each of the required data values on the product page&#10; &#10; Return expected values for now" />
+    <MESSAGE value="Implement getUnit price&#10;&#10;Remove white space, any invalid chars, and convert to double" />
+    <MESSAGE value="Implement getProductDescription" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implement getProductDescription" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/SainburysProductsScraper.java</url>
-          <line>62</line>
+          <line>91</line>
           <properties />
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="((HtmlParagraph)element).firstChild_" custom="com.gargoylesoftware.htmlunit.html.HtmlParagraph" />
+        <watch expression="productListDomElements.get(6)" />
       </configuration>
     </watches-manager>
   </component>
@@ -466,26 +485,6 @@
     <entry file="file://$PROJECT_DIR$/tests/ServerSideTests" />
     <entry file="file://$PROJECT_DIR$/tests/ServerSideTests.java" />
     <entry file="file://$PROJECT_DIR$/src/Main.java" />
-    <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="51" column="188" selection-start-line="51" selection-start-column="188" selection-end-line="51" selection-end-column="188" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Product.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-657">
@@ -508,11 +507,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+        <state relative-caret-position="74">
+          <caret line="76" column="40" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#812#821#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProductTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="12" column="47" selection-start-line="12" selection-start-column="47" selection-end-line="12" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SainburysProductsScraperTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="80" column="4" lean-forward="true" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
